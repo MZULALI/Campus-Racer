@@ -1,0 +1,31 @@
+logging:
+  level: INFO
+  file: logs/campus_racer.log
+
+servo:
+  i2c_address: 0x40
+  steering_channel: 0
+  throttle_channel: 1
+  steering_gain: -0.65
+  steering_offset: 0
+  throttle_gain: 0.8
+
+camera:
+  resolution: [640, 480]
+  framerate: 30
+  flip_method: 2
+
+multiplexer:
+  address: 0x70
+  control_pins:
+    sel: [17, 27, 22]
+
+autonomous:
+  lane_detection:
+    canny_threshold1: 50
+    canny_threshold2: 150
+    roi_vertices: [[(0, 480), (320, 320), (640, 480)]]
+  
+  path_planning:
+    lookahead_distance: 50
+    max_steering_angle: 30

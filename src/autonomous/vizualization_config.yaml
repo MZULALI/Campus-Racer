@@ -1,0 +1,7 @@
+# src/autonomous/visualization_config.yaml
+
+lane_color: [0, 255, 0]          # Green color for lanes
+lane_thickness: 2
+path_color: [0, 0, 255]          # Red color for path
+path_thickness: 2
+path_length: 100                 # Length of the path line in pixels
